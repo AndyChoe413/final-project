@@ -1,0 +1,126 @@
+body {
+  background-image: url("https://media.giphy.com/media/1ULCgkWc2IiXJyxp5o/giphy.gif");
+  background-size: cover;
+}
+
+.header {
+  margin: auto;
+  text-align: center;
+  font-size: 45px;
+  letter-spacing: 2rem;
+  color: #b5179e;
+  font-weight: 900;
+  background-color: thistle;
+  width: 75%;
+  border-radius: 10px;
+
+  overflow: hidden;
+  position: relative;
+  transform: translateX(100%);
+  animation: scroll-right 15s linear infinite;
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.header-img {
+  height: 65px;
+  width: 150px;
+  margin-top: 7px;
+  margin-right: 70px;
+  border-radius: 12px;
+}
+
+.carousel {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.carousel .carousel-item,
+.carousel .carousel-item-hidden {
+  display: none;
+}
+
+.carousel .carousel-item-visible {
+  display: block;
+  animation: fade 4s;
+}
+
+.images {
+  margin: auto;
+  border: solid #f72585 10px;
+  width: 85vw;
+  max-width: 100%;
+  height: 650px;
+  border-radius: 10px;
+}
+
+.carousel-actions {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  align-content: space-around;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  width: 70%;
+  align-content: space-between;
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  margin: 3px 10px;
+  border-radius: 50px;
+  background-color: #f72585;
+  color: white;
+  border: 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  align-content: space-between;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: opacity linear;
+  }
+}
+
+.artist-info {
+  margin: 0 15px;
+  padding: 2px 6px;
+  background-color: whitesmoke;
+  border: solid #f72585 8px;
+  width: 95vw;
+  max-width: 100%;
+  height: 650px;
+  border-radius: 10px;
+  display: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  text-align: justify;
+}
