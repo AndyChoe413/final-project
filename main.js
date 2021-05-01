@@ -9,7 +9,10 @@ const jovi = new Audio('music/jovi.m4a')
 jovi.loop = true
 const cure = new Audio('music/cure.m4a')
 cure.loop = true
-
+const bryan = new Audio('music/bryan.m4a')
+bryan.loop = true
+const aerosmith = new Audio('music/aerosmith.m4a')
+aerosmith.loop = true
 
 //---------helper functions container-------------------//
 
@@ -47,21 +50,38 @@ const clearInfo = () => {
 
 //music helper function
 const musicFinder = () => {
-      if (slidePosition === 0) {
+   if (slidePosition === 0) {
+      aerosmith.pause()
       jovi.pause()
       cure.pause()
       clapton.play()
    }
    if (slidePosition === 1) {
+      aerosmith.pause()
       clapton.pause()
       cure.pause()
       jovi.play()
    }
    if (slidePosition === 2) {
+      aerosmith.pause()
       jovi.pause()
       clapton.pause()
       cure.play()
    }
+   if (slidePosition === 3) {
+      aerosmith.pause()
+      jovi.pause()
+      clapton.pause()
+      cure.pause()
+      bryan.play()
+   }
+   if (slidePosition === 4) {
+      cure.pause()
+      bryan.pause()
+      jovi.pause()
+      clapton.pause()
+      aerosmith.play()
+}
 }
 
 //---------helper functions container end-------------------//
@@ -143,7 +163,7 @@ document.querySelector('#carousel-button-info').addEventListener('click', () => 
    info.style.maxWidth = '50%'
    info.innerText = `ARTISTS DISCOGRAPHY
    
-   Singer Bryan Adams has released fourteen studio albums, six compilation albums, two soundtrack albums, four live albums, and sixty-nine singles. After the success of his debut single, "Let Me Take You Dancing" (1979), Adams signed a recording contract with A&M Records. Bryan Adams (1980), his debut album, peaked at number 69 on the Canadian RPM Albums Chart. Adams followed this with You Want It You Got It (1981), which peaked at number 118 on the Billboard 200 and was certified gold in Canada. Cuts Like a Knife, his third release, became his first successful work outside Canada. The album charted within the top ten in Canada and the United States and was certified three-times platinum by the Canadian Recording Industry Association (CRIA) and platinum by the Recording Industry Association of America (RIAA). Reckless (1984), his fourth studio album, selling over 12 million copies worldwide[1] and featured the hit singles "Run to You", "Heaven" and "Summer of '69". In 1987, he released Into the Fire, which reached platinum status in the United States and triple-platinum in Canada.
+Singer Bryan Adams has released fourteen studio albums, six compilation albums, two soundtrack albums, four live albums, and sixty-nine singles. After the success of his debut single, "Let Me Take You Dancing" (1979), Adams signed a recording contract with A&M Records. Bryan Adams (1980), his debut album, peaked at number 69 on the Canadian RPM Albums Chart. Adams followed this with You Want It You Got It (1981), which peaked at number 118 on the Billboard 200 and was certified gold in Canada. Cuts Like a Knife, his third release, became his first successful work outside Canada. The album charted within the top ten in Canada and the United States and was certified three-times platinum by the Canadian Recording Industry Association (CRIA) and platinum by the Recording Industry Association of America (RIAA). Reckless (1984), his fourth studio album, selling over 12 million copies worldwide[1] and featured the hit singles "Run to You", "Heaven" and "Summer of '69". In 1987, he released Into the Fire, which reached platinum status in the United States and triple-platinum in Canada.
 
 Adams entered the 1990s with the release of Waking Up the Neighbours (1991), which contained "(Everything I Do) I Do It for You", the theme song for the film Robin Hood: Prince of Thieves. It went on to sell more than 15 million copies worldwide, making it Adams's most successful song, and one of the best-selling singles of all time.  The album was sold in approximately 16 million copies, including being certified diamond in Canada.[4] He also released his first greatest hits compilation, So Far So Good, in 1993. This album topped the charts in nine countries and was certified six-times platinum and seven-times platinum by the RIAA and CRIA respectively. His seventh studio album, 18 til I Die, was released in 1996. It sold five million copies worldwide and was certified platinum in the United States.MTV Unplugged, an acoustic live album released in 1997, reached the top ten in four countries while selling two million copies in Europe. Adams' eighth studio album, On a Day Like Today (1998), was certified double-platinum by the CRIA and platinum by the IFPI Platinum Europe Awards. His second compilation album, The Best of Me (1999), sold two million copies in Europe and went three-times platinum in Canada.`
    }
@@ -153,8 +173,14 @@ Adams entered the 1990s with the release of Waking Up the Neighbours (1991), whi
    info.style.display = 'block'
    info.style.maxWidth = '50%'
    info.innerText = `ARTISTS DISCOGRAPHY
-   
-   `
+
+Aerosmith is an American rock band formed in Boston in 1970. The group consists of Steven Tyler (lead vocals), Joe Perry (guitar), Tom Hamilton (bass), Joey Kramer (drums) and Brad Whitford (guitar). Their style, which is rooted in blues-based hard rock,[3][4] has also incorporated elements of pop rock,[5] heavy metal, glam metal, and rhythm and blues,[10] and has inspired many subsequent rock artists. They are sometimes referred to as "the Bad Boys from Boston" and "America's Greatest Rock and Roll Band".  The primary songwriting team of Tyler and Perry is often known as the "Toxic Twins".
+
+Perry and Hamilton, originally in a band together called the Jam Band, met up with Tyler, Kramer, and guitarist Ray Tabano, and formed Aerosmith; in 1971, Tabano was replaced by Whitford. They released a string of multi-platinum albums starting with their eponymous debut in 1973, followed by Get Your Wings in 1974. The band broke into the mainstream with Toys in the Attic (1975) and Rocks (1976). Draw the Line and Night in the Ruts followed in 1977 and 1979. Throughout the 1970s, the band toured extensively and charted a dozen Hot 100 singles, including their first Top 40 hit "Sweet Emotion" and the Top 10 hits "Dream On" and "Walk This Way". By the end of the decade, they were among the most popular hard rock bands in the world and developed a following of fans, often referred to as the "Blue Army". Drug addiction and internal conflict led to the departures of Perry and Whitford in 1979 and 1981. The band did not fare well and the album Rock in a Hard Place (1982) failed to match previous successes.
+
+Perry and Whitford returned to Aerosmith in 1984. After a comeback tour, they recorded Done with Mirrors (1985), which did not meet commercial expectations. It was not until a 1986 collaboration with rap group Run–D.M.C. on a remake of "Walk This Way", and the 1987 multi-platinum release, Permanent Vacation, that they regained their previous level of popularity. In the late 1980s and 1990s, the band won numerous awards for music from the multi-platinum albums Pump (1989), Get a Grip (1993), and Nine Lives (1997), while they embarked on their most extensive concert tours to date. Their biggest hits during this period included "Dude (Looks Like a Lady)", "Angel", "Rag Doll", "Love in an Elevator", "Janie's Got a Gun", "What it Takes", "Livin' on the Edge", "Cryin'", and "Crazy". The band also filmed popular music videos and made notable appearances in television, film, and video games. In 1998, they achieved their first number-one hit with "I Don't Want to Miss a Thing" from Armageddon's soundtrack and the following year, their roller coaster attraction opened at Walt Disney World. Their comeback has been described as one of the most remarkable and spectacular in rock history.Additional albums Just Push Play (which included the hit "Jaded"), Honkin' on Bobo (a collection of blues covers), and Music from Another Dimension! followed in 2001, 2004, and 2012. In 2008, they released Guitar Hero: Aerosmith, which is considered to be the best-selling band-centric video game. After five decades, the band continues to tour and record music. Prior to the COVID-19 pandemic, they had an ongoing concert residency in Las Vegas.
+
+Aerosmith is the best-selling American hard rock band of all time, having sold more than 150 million records worldwide, including over 70 million records in the United States. With 25 gold, 18 platinum, and 12 multi-platinum albums, they hold the record for the most total certifications by an American group and are tied for the most multi-platinum albums by an American group. They have achieved twenty-one Top 40 hits on the US Hot 100, nine number-one Mainstream Rock hits, four Grammy Awards, six American Music Awards, and ten MTV Video Music Awards. They were inducted into the Rock and Roll Hall of Fame in 2001, and were ranked number 57 and 30, respectively, on Rolling Stone's and VH1's lists of the 100 Greatest Artists of All Time. In 2013, Tyler and Perry were inducted into the Songwriters Hall of Fame, and in 2020, the band received the MusiCares Person of the Year award.`
    }
 });
 
