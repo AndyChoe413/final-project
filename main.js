@@ -5,13 +5,11 @@ const totalSlides = slides.length;
 
 //music keepers
 const clapton = new Audio('music/eric-clapton.m4a');
-clapton.loop = true
-clapton.autoplay = true
-
 const jovi = new Audio('music/jovi.m4a')
 jovi.loop = true
 const cure = new Audio('music/cure.m4a')
 cure.loop = true
+
 
 //---------helper functions container-------------------//
 
@@ -53,7 +51,6 @@ const musicFinder = () => {
       jovi.pause()
       cure.pause()
       clapton.play()
-      
    }
    if (slidePosition === 1) {
       clapton.pause()
