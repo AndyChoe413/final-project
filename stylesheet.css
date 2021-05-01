@@ -13,7 +13,6 @@ body {
   background-color: thistle;
   width: 75%;
   border-radius: 10px;
-
   overflow: hidden;
   position: relative;
   transform: translateX(100%);
@@ -111,16 +110,26 @@ button {
 
 .artist-info {
   margin: 0 15px;
-  padding: 2px 6px;
+  padding: 4px 10px;
   background-color: whitesmoke;
   border: solid #f72585 8px;
-  width: 95vw;
+  width: 85%;
   max-width: 100%;
-  height: 650px;
+  height: 645px;
   border-radius: 10px;
   display: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.2rem;
   line-height: 1.4;
   text-align: justify;
+  overflow: scroll;
 }
+
+/* .scroll-open @keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+} */
