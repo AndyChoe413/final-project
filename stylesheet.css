@@ -148,3 +148,30 @@ button {
   width: 580px;
   font-size: 30px;
 }
+
+@media screen and (max-width: 690px) {
+  .header-img {
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 150px;
+    margin: 8px auto;
+  }
+
+  .header {
+    letter-spacing: normal;
+  }
+
+  .artist-info {
+    overflow: scroll;
+    font-size: 15px;
+  }
+
+  #carousel-button-info:hover,
+  #carousel-button-prev:hover,
+  #carousel-button-next:hover {
+    height: 45px;
+    width: 200px;
+    font-size: 15px;
+  }
+}
