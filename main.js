@@ -136,6 +136,26 @@ document.querySelector('#carousel-button-info').addEventListener('click', () => 
 
       The Cure were inducted into the Rock and Roll Hall of Fame in 2019.`
    }
+
+   if (slidePosition === 3) {
+   makeSmaller()
+   info.style.display = 'block'
+   info.style.maxWidth = '50%'
+   info.innerText = `ARTISTS DISCOGRAPHY
+   
+   Singer Bryan Adams has released fourteen studio albums, six compilation albums, two soundtrack albums, four live albums, and sixty-nine singles. After the success of his debut single, "Let Me Take You Dancing" (1979), Adams signed a recording contract with A&M Records. Bryan Adams (1980), his debut album, peaked at number 69 on the Canadian RPM Albums Chart. Adams followed this with You Want It You Got It (1981), which peaked at number 118 on the Billboard 200 and was certified gold in Canada. Cuts Like a Knife, his third release, became his first successful work outside Canada. The album charted within the top ten in Canada and the United States and was certified three-times platinum by the Canadian Recording Industry Association (CRIA) and platinum by the Recording Industry Association of America (RIAA). Reckless (1984), his fourth studio album, selling over 12 million copies worldwide[1] and featured the hit singles "Run to You", "Heaven" and "Summer of '69". In 1987, he released Into the Fire, which reached platinum status in the United States and triple-platinum in Canada.
+
+Adams entered the 1990s with the release of Waking Up the Neighbours (1991), which contained "(Everything I Do) I Do It for You", the theme song for the film Robin Hood: Prince of Thieves. It went on to sell more than 15 million copies worldwide, making it Adams's most successful song, and one of the best-selling singles of all time.  The album was sold in approximately 16 million copies, including being certified diamond in Canada.[4] He also released his first greatest hits compilation, So Far So Good, in 1993. This album topped the charts in nine countries and was certified six-times platinum and seven-times platinum by the RIAA and CRIA respectively. His seventh studio album, 18 til I Die, was released in 1996. It sold five million copies worldwide and was certified platinum in the United States.MTV Unplugged, an acoustic live album released in 1997, reached the top ten in four countries while selling two million copies in Europe. Adams' eighth studio album, On a Day Like Today (1998), was certified double-platinum by the CRIA and platinum by the IFPI Platinum Europe Awards. His second compilation album, The Best of Me (1999), sold two million copies in Europe and went three-times platinum in Canada.`
+   }
+
+   if (slidePosition === 4) {
+   makeSmaller()
+   info.style.display = 'block'
+   info.style.maxWidth = '50%'
+   info.innerText = `ARTISTS DISCOGRAPHY
+   
+   `
+   }
 });
 
 
