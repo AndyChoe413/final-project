@@ -134,3 +134,17 @@ button {
     transform: translateX(0%);
   }
 }
+
+#carousel-button-info,
+#carousel-button-prev,
+#carousel-button-next {
+  justify-content: center;
+}
+
+#carousel-button-info:hover,
+#carousel-button-prev:hover,
+#carousel-button-next:hover {
+  height: 43px;
+  width: 580px;
+  font-size: 30px;
+}
